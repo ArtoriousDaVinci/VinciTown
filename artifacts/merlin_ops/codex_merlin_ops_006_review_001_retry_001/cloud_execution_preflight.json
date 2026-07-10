@@ -1,0 +1,31 @@
+{
+  "package_id": "CODEX-MERLIN-OPS-006-REVIEW-001-RETRY-001",
+  "status": "BLOCKED",
+  "classification": "MERLIN_OPS_006_REVIEW_RETRY_001_BLOCKED_REPAIR_PR_INTEGRATION",
+  "execution_environment": "Codex cloud workspace",
+  "repository_path": "/workspace/VinciTown",
+  "expected_repository": "The-Vinci-Town/merlin-trading-system",
+  "observed_repository": "VinciTown placeholder checkout",
+  "local_machine_used": false,
+  "macbook_required": false,
+  "mac_mini_required": false,
+  "gh_cli_available": false,
+  "github_token_available": false,
+  "network_git_probe_result": "CONNECT tunnel failed with HTTP 403",
+  "repair_pr_integrated": false,
+  "workflow_dispatched": false,
+  "movement_created": false,
+  "review_completed": false,
+  "reason": "The workspace is not a checkout of The-Vinci-Town/merlin-trading-system, the required repair head is absent locally, gh is not installed, no GitHub token is present, and unauthenticated git access to the target repository is blocked by the environment. The package cannot safely integrate PR #43 or dispatch the one-shot movement pilot from this checkout.",
+  "hard_boundaries": {
+    "automatic_approval": false,
+    "automatic_merge": false,
+    "direct_main_mutation": false,
+    "selected_package_execution": false,
+    "economic_execution": false,
+    "runtime_or_trading": false,
+    "private_or_capital_access": false,
+    "model_promotion": false,
+    "production_mutation": false
+  }
+}
