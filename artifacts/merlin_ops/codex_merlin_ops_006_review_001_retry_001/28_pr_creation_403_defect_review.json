@@ -1,9 +1,19 @@
 {
   "artifact_count": 78,
-  "artifact_name": "cloud_execution_preflight",
+  "artifact_index": 28,
+  "artifact_name": "pr_creation_403_defect_review",
   "classification": "MERLIN_OPS_006_REVIEW_001_RETRY_001_REPAIR_REQUIRED_GITHUB_PR_CREATION_PERMISSION_PREFLIGHT",
+  "disposition": "REPAIR_REQUIRED",
   "existing_pr": 45,
   "expected_repository": "The-Vinci-Town/merlin-trading-system",
+  "findings": {
+    "actions_allowed_to_create_and_approve_prs": "undetermined_without_repository_settings_access",
+    "adapter_should_detect_capability_during_preflight": true,
+    "agent_managed_api_continuation_acceptable_bounded_fallback": "acceptable only with explicit lineage, exact-head CI, and human-review stop; not proven here",
+    "repository_actions_restricted_pr_creation": "undetermined_without_repository_settings_access",
+    "typed_failure_should_replace_raw_403": true,
+    "workflow_token_lacked_pr_creation_permission": "undetermined_without_target_repo_workflow_logs"
+  },
   "generated_at": "2026-07-10T18:21:45Z",
   "hard_boundaries": {
     "automatic_merge": false,

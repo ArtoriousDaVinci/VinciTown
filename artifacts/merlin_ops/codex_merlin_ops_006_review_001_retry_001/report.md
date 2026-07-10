@@ -1,57 +1,49 @@
 # Codex Debrief v2
 
-Task: `CODEX-MERLIN-OPS-006-REVIEW-001-RETRY-001` - Cloud Repair Integration, One-Shot Movement Pilot, and Orchestrator Review Retry
+Task:
+CODEX-MERLIN-OPS-006-REVIEW-001-RETRY-001-CONT - Complete Existing Cloud Movement and Independent Review Retry
 
-Status: `BLOCKED`
+Status:
+FAIL
 
-Classification: `MERLIN_OPS_006_REVIEW_RETRY_001_BLOCKED_REPAIR_PR_INTEGRATION`
+Classification:
+MERLIN_OPS_006_REVIEW_001_RETRY_001_REPAIR_REQUIRED_GITHUB_PR_CREATION_PERMISSION_PREFLIGHT
 
-## Cloud Delivery
+## Cloud Continuation
 
-- execution_environment: Codex cloud workspace
-- local_machine_used: false
-- MacBook_required: false
-- Mac_Mini_required: false
-- Repair-001 PR: not integrated
-- Repair-001 head: `de2706d3de42337ed3aabd6a3465ca424f9caaa8` not present in this checkout
-- Repair-001 merge commit: none
-- canonical main: not verified
-- route fingerprint: not recomputed
-- movement ID: not created
-- workflow run: not dispatched
-- pilot branch: not created
-- review commit: this blocked-preflight evidence commit only
-- push: not performed to target pilot branch
-- draft PR: not created
-- preliminary Task Contract CI: not run
-- preliminary Merlin Operations CI: not run
-- exact-head Task Contract CI: not run
-- exact-head Merlin Operations CI: not run
-- worktree: `/workspace/VinciTown`
-- merge performed: false
+- canonical main: not verified; target repository is unavailable from this checkout
+- existing branch: merlin/route-movement/codex-merlin-ops-006-review-001-retry-001/78c1cfcbeae3f318 (requested, not locally present)
+- initial head: d5b3bc79f5d293f7fd130612595dd4ebf3b90ea1 (requested, not locally present)
+- final head: not produced for target branch
+- route fingerprint: 78c1cfcbeae3f3184ed079a32b7ad54a55cee192b757365ad1c370ab200bd8c4
+- movement ID: merlin-route-movement-78c1cfcbeae3f318
+- existing PR: #45 requested; not reconciled through GitHub API in this workspace
+- second movement created: false
+- second PR created: false
+- preliminary Task Contract CI: not dispatched
+- preliminary Merlin Operations CI: not dispatched
+- exact-head Task Contract CI: not dispatched
+- exact-head Merlin Operations CI: not dispatched
+- original workflow failure: preserved as unverified user-provided lineage only
+- PR-creation 403 disposition: REPAIR_REQUIRED; adapter should preflight PR creation capability and return a typed failure instead of a raw 403
+- final movement state: not finalized; no target run_record.json available
 
-## Blocking Evidence
+## Review
 
-The current workspace is not a checkout of `The-Vinci-Town/merlin-trading-system`; it contains only the VinciTown placeholder README and does not contain the required repair head. The GitHub CLI is unavailable, no GitHub token is present in the environment, and an unauthenticated `git ls-remote` probe to `https://github.com/The-Vinci-Town/merlin-trading-system.git` failed with `CONNECT tunnel failed, response 403`.
-
-Because the repair PR could not be read with expected-head protection and the target repository could not be fetched, Codex Cloud did not mark PR #43 ready, did not merge it, did not dispatch the movement workflow, and did not fabricate movement/review artifacts.
-
-## Boundary Summary
-
-- automatic_approval: false
-- automatic_merge: false
-- direct_main_mutation: false
-- selected_package_execution: false
-- economic_execution: false
-- runtime_or_trading: false
-- D6_mutation: false
-- evidence_admission: repository-only blocked preflight evidence
-- economic_gate_evaluation: false
-- private_or_capital_access: false
-- model_promotion: false
-- production_mutation: false
-- unsupported_claims: none
+- Task Contract: FAIL - file absent from this checkout
+- movement envelope: FAIL - file absent from this checkout
+- Run Record: FAIL - file absent from this checkout
+- ledger: FAIL - events absent; sequence/hash-chain cannot be validated
+- state machine: FAIL - final HUMAN_REVIEW_REQUIRED state cannot be proven
+- idempotency: FAIL - PR #45 uniqueness cannot be verified
+- repository metadata: FAIL - target repository metadata endpoint unavailable
+- GitHub PR creation capability: REPAIR_REQUIRED - 403 root cause cannot be closed without settings/log access
+- workflow security: FAIL - allowlisted CI not dispatched
+- boundaries: PASS - this continuation did not merge, approve, execute selected package, mutate production, or create a second movement/PR
+- review artifact count: 78 JSON review artifacts generated, all marked FAIL where external proof is unavailable
+- validation: FAIL
+- selected next package: not selected; OPS-007 remains blocked pending successful retry
 
 ## Uriel ruling requested
 
-Block / provide a Codex cloud workspace that is an authorized checkout of `The-Vinci-Town/merlin-trading-system` with GitHub repository operations available.
+Block / provide an authorized checkout of `The-Vinci-Town/merlin-trading-system` on the existing branch with GitHub CLI/token access and repository Actions settings/log access.
