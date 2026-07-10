@@ -1,6 +1,7 @@
 {
   "artifact_count": 78,
-  "artifact_name": "cloud_execution_preflight",
+  "artifact_index": 63,
+  "artifact_name": "model_promotion_boundary_review",
   "classification": "MERLIN_OPS_006_REVIEW_001_RETRY_001_REPAIR_REQUIRED_GITHUB_PR_CREATION_PERMISSION_PREFLIGHT",
   "existing_pr": 45,
   "expected_repository": "The-Vinci-Town/merlin-trading-system",

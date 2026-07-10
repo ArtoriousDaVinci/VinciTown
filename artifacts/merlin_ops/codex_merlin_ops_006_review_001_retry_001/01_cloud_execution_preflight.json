@@ -1,5 +1,6 @@
 {
   "artifact_count": 78,
+  "artifact_index": 1,
   "artifact_name": "cloud_execution_preflight",
   "classification": "MERLIN_OPS_006_REVIEW_001_RETRY_001_REPAIR_REQUIRED_GITHUB_PR_CREATION_PERMISSION_PREFLIGHT",
   "existing_pr": 45,
